@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="externalcss.css">
+    <title>Operations</title>
+    <style>
+         body
+         {
+            background-color: rgba(255,215,0,0.6);
+           
+         }
+
+         .pre-title
+         {
+            background-color:white;
+            padding: 15px 15px 15px 15px;
+            margin: 2px 2px 2px;
+         }  
+      
+         #title
+         {
+            margin: 15px;
+            color: gold;
+            position: relative;
+         }
+      
+         #th1
+         {
+            padding: 15px 15px;
+            text-align: right;
+            font-size: 20px;             
+         }
+
+         .table1
+         {
+            margin: -45px  0px 0px 750px ;
+         }
+      
+         #effect a:link,#footer a:link  
+         {
+            color:#FFCC00;
+         }
+
+         #effect a:visited,#footer a:visited
+         {
+            color: orange; 
+         }
+
+         #effect a:hover,#footer a:hover
+         {
+            color: greenyellow; 
+         }
+
+         #effect a:active,#footer a:active
+         {
+            color: blue; 
+         }
+       
+         #table,#th
+         {
+            border-top-style: dashed;
+            border-right-style: dashed;
+            border-bottom-style: dashed;
+            border-left-style: dashed;
+            
+            border-top-width: 2px;
+            border-right-width: 2px;
+            border-bottom-width: 2px;
+            border-left-width: 2px;
+    
+            border-top-color: black;
+            border-right-color: black;
+            border-bottom-color: black;
+            border-left-color: 2px;
+    
+            border-radius: 4px; 
+
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            
+            margin: 5px 5px;
+            background-color: grey;
+         }
+
+        .pd::before
+         {
+            content:"Popular";
+            background-color: lightpink;
+         }
+
+         #our::after
+         {
+            content:" Services";
+            background-color: lightblue;
+         }
+
+         #our
+         {
+            text-align:center;
+         }
+
+         #our::selection
+         {
+            color:yellowgreen;
+            background:white;
+         }
+
+        #buttons
+        {
+            background-color: gold;
+            border: solid black;
+            border-radius: 7px;
+            margin-top: 190px;
+            margin-left: 90px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+   <div class="pre-title" >
+      <h1 id="title" style="font-family:Verdana">GOA TAXI SERVICE</h1> 
+      <table class="table1">
+         <tr id="effect">
+            <th id="th1"><a href="adminhome.html" style="font-family:Verdana">Home</a></th>
+            <th id="th1"><a href="operations.html" target="_blank" style="font-family:Verdana">Operations</a></th>
+            <th id="th1"><a href="services.html" target="_blank" style="font-family:Verdana">Services</a></th>
+            <th id="th1"><a href="aboutus.html" target="_blank" style="font-family:Verdana"> About Us</a></th>
+         </tr>
+      </table>
+   </div>
+</header>
+   <div>
+       <a href="addcardata.php"><button type="button" id="buttons">Add Car</button></a>
+       <a href="deletedata.php"><button type="button" id="buttons">Delete Car</button></a>
+       <a href="updatedata.php"><button type="button" id="buttons">Update Car</button></a>
+       <a href="searchdata.php"><button type="button" id="buttons">Search Car</button></a>
+       <a href="adminbookingsearch.php"><button type="button" id="buttons">Search Booking</button></a>
+       <a href="searchuserdata.php"><button type="button" id="buttons">Search User</button></a>
+       <a href="aggregate.php"><button type="button" id="buttons" style="margin-left:300px">Number Of Cars</button></a>
+       <a href="subquery.php"><button type="button" id="buttons" style="margin-left:50px">View Cars And Fuel Types</button></a>
+       <a href="viewtable.php"><button type="button" id="buttons" style="margin-left:50px">Car Booking Details</button></a>
+      </div>
+   
+   <footer style="background-color: #f1f1f1; color: #333; text-align: center; padding: 20px; margin-top: 150px; padding-top: 50px;">
+         <p style="font-family:Verdana">@2024 Your Taxi Service. All Content Owned By <b>S3</b></p>
+         <p style="font-family:Verdana">
+            <b>Privacy Policy</b> | 
+            <b>Terms Of Service</b>
+         </p>
+   </footer>
+</body>
+</html>
+

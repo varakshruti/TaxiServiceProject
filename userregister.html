@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head> 
+      <title>User Registration</title>
+      <style>
+        body
+        {
+          background-color: rgba(255,215,0,0.6);
+        }
+
+        .pre-title
+        {
+            background-color:white;
+            padding: 15px 15px 15px 15px;
+            margin: 2px 2px 2px;
+        }  
+      
+        #title
+        {
+            margin: 15px;
+            color:gold;
+            position: relative;
+        }
+
+        h3
+        {
+          text-align:center;
+          color:rgb(43, 41, 41);
+          font-family:Verdana;
+        }
+
+        form
+        {
+          font-family:Georgia;
+          width: 500px;
+          margin: 100px 370px;
+          background-color: rgba(255, 215, 0,0.7);
+          padding: 50px 50px;
+          border: solid black;
+          border-radius: 15px;
+        }
+
+        .forms
+        {
+          margin-left: 15px;
+        }
+
+        .btn
+        {
+          font-size: 20px;
+          margin-left: 110px;
+          border-radius: 5px;
+          border-style: solid;
+          border-color: black;
+          background-color: grey;
+        }
+      </style>
+      <script type="text/javascript" src="signup.js"></script>
+</head>
+<body class="background-image">
+<header>
+   <div class="pre-title" >
+      <h1 id="title" style="font-family:Verdana">GOA TAXI SERVICE</h1>    
+   </div>
+</header>
+    <form action="signup.php" method="POST" onsubmit="return validate()"> 
+          <h1 style="text-align: center;color:rgb(43, 41, 41);font-family:Verdana;"><b><u>Create An Account</u></b></h1><br><br>
+          <label>Name</label>
+          <input type="text" id="name" name="name" class="forms" placeholder="Eg. John Dias" autocomplete="off"><br><br>
+
+          <label>Gender</label>
+          <input type="radio" id="male" name="gender" value="Male">Male
+          <input type="radio" id="female" name="gender" value="Female">Female
+          <input type="radio" id="other" name="gender" value="Other">Other <br> <br>
+
+          <label>Date Of Birth</label> 
+          <input type="date" id="dob" name="dob" class="forms" autocomplete="off"><br><br> 
+
+          <label>Mobile Number</label> 
+          <input type="number"id="num" name="num" class="forms" placeholder="Eg. 7111111111" autocomplete="off"><br><br>
+
+          <label>Email Id</label>
+          <input type="email" id="email" name="email" class="forms" placeholder="Eg. abc@gmail.com" autocomplete="off"> <br> <br>
+
+          <label>State</label> 
+          <select class="forms" id="states" name="states">
+          		 <option value=""></option>
+                 <option value="Goa">Goa</option>
+                 <option value="Maharashtra">Maharashtra</option>
+                 <option value="Karnataka">Karnataka</option>
+                 <option value="Gujarat">Gujarat</option> 
+          </select> <br> <br>
+
+          <label>Address</label> <br>
+          <textarea rows="10" cols="60" id="address" name="address" autocomplete="off"></textarea> <br> <br>
+
+          <label>Password</label>
+          <input type="password" id="password" name="password" class="forms" autocomplete="off"> <br><br>
+
+          <label>Preferred Taxi Service Type</label>
+          <br><input type="radio" id="standard" name="service" value="Standard">Standard
+          <br><input type="radio" id="premium" name="service" value="Premium">Premium
+          <br><input type="radio" id="luxury" name="service" value="Luxury">Luxury <br> <br>
+
+          <label>Preferred Payment Type</label>
+          <br><input type="checkbox" id="creditcard" name="payment[]" value="Creditcard">Credit Card
+          <br><input type="checkbox" id="debitcard" name="payment[]" value="Debitcard">Debit Card
+          <br><input type="checkbox" id="cash" name="payment[]" value="Cash">Cash
+          <br><input type="checkbox" id="upi" name="payment[]" value="UPI">UPI (Google Pay/Paytm/Phone Pe)<br><br><br>
+          
+          <input type="Submit" id="sbutton" class="btn" value="Submit">
+          <input type="Reset" id="rbutton" class="btn" value="Reset"><br>
+
+          <div style="text-align: center;">
+            <p style="font-family:Verdana"><b>OR</b></p>
+            <a href="userlogin.html" style="font-family:Verdana"><b>Already Has An Account?</b></a>
+          </div>
+    </form>
+    <footer style="background-color: #f1f1f1; color: #333; text-align: center; padding: 20px; margin-top: 150px; padding-top: 50px;">
+         <p style="font-family:Verdana">@2024 Your Taxi Service. All Content Owned By <b>S3</b></p>
+         <p style="font-family:Verdana">
+            <b>Privacy Policy</b> | 
+            <b>Terms Of Service</b>
+         </p>
+    </footer> 
+</body>
+</html>

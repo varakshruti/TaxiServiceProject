@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Login</title>
+	<style type="text/css">
+		body
+        {
+          background-color: rgba(255,215,0,0.6);   
+        }
+
+        .pre-title
+        {
+            background-color:white;
+            padding: 15px 15px 15px 15px;
+            margin: 2px 2px 2px;
+        }  
+      
+        #title
+        {
+            margin: 15px;
+            color:gold;
+            position: relative;
+        }
+
+        h3
+        {
+          text-align:center;
+          color:rgb(43, 41, 41);
+          font-family:Verdana;
+        }
+
+		.forms
+		{
+			background-color: rgba(255, 215, 0,0.7);
+			text-align: center;
+			margin: 250px 450px;
+			padding: 10px;
+			border: solid black;
+			border-radius: 15px;
+			font-family: Georgia;
+
+		}
+
+		input
+		{
+			margin-left: 10px;
+		}
+
+		#submit,#reset
+		{
+			background-color: grey;
+			margin-bottom: 7px;
+			border-color: black;
+			border-radius: 5px;
+			font-size: 17px;
+		}
+	</style>
+</head>
+<body class="background-image">
+<header>
+   <div class="pre-title" >
+      <h1 id="title" style="font-family:Verdana">GOA TAXI SERVICE</h1>
+   </div>
+</header>
+	<form action="login.php" method="POST" class="forms" >
+		<h1 style="font-family:Verdana"><u>User Login</u></h1><br>
+		<label>Username</label>
+		<input type="text" id="username" name="username" placeholder="Eg. Email" autocomplete="off"><br><br>
+		<label>Password</label>
+		<input type="password" id="pswd" name="pswd" placeholder="Eg. Hello@12" autocomplete="off"><br><br>
+		<input type="submit" id="submit">
+		<input type="reset" id="reset"><br>
+
+		<p style="font-family:Verdana"><b>OR</b></p>
+		<a href="userregister.html"  style="font-family:Verdana"><b>Create An Account</b></a>
+	</form>
+
+	<footer style="background-color: #f1f1f1; color: #333; text-align: center; padding: 20px; margin-top: 150px; padding-top: 50px;">
+         <p style="font-family:Verdana">@2024 Your Taxi Service. All Content Owned By <b>S3</b></p>
+         <p style="font-family:Verdana">
+            <b>Privacy Policy</b> | 
+            <b>Terms Of Service</b>
+         </p>
+    </footer>
+</body>
+</html>
